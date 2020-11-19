@@ -5,13 +5,16 @@
     <title>Форма</title>
   </head>
   <body class="page__body">
-    <header class="header">
-      <a href="" class="logo">
+    <header class="page-header">
+      <a class="logo page-header__logo">
         <img src="https://via.placeholder.com/150x150" alt="Логотип компании" width="150" height="150">
         <p class="logo__text"><b>Cat</b> Energy</p>
       </a>
+      <a class="logo-text page-header__logo-text">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип компании текстовый" width="150" height="150">
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Кнопка переключения меню"></button>
       <nav class="nav">
-        <button type="button" class="nav__toggle">Кнопка переключения меню</button>
         <ul class="nav__list">
           <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
           <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
@@ -21,7 +24,110 @@
     </header>
 
     <main>
+      <h1 class="home-title">Подбор программы</h1>
 
+      <form action="https://echo.htmlacademy.ru/" method="post" class="page-form">
+        <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+        <fieldset class="page-form__home-info">
+          <div class="page-form__home-info-left">
+            <label class="field-text">
+              <span class="field-text__label">Имя:*</span>
+              <span class="field-text__wrapper">
+                <input class="field-text__input" type="text" required placeholder="Барсик" name="name">
+              </span>
+            </label>
+
+            <label class="field-text">
+              <span class="field-text__label">Вес (кг):*</span>
+              <span class="field-text__wrapper">
+                <input class="field-text__input" type="number" required placeholder="7" name="weight">
+              </span>
+            </label>
+
+            <label class="field-text">
+              <span class="field-text__label">Возраст (лет):</span>
+              <span class="field-text__wrapper">
+                <input class="field-text__input" type="number" placeholder="7" name="age">
+              </span>
+            </label>
+          </div>
+
+          <div class="page-form__home-info-right">
+            <div class="field-radio">
+              <input class="field-radio__input" type="radio" value="slimming" id="slimming" checked name="property">
+              <label class="field-radio__text" for="slimming">Похудение</label>
+            </div>
+
+            <div class="field-radio">
+              <input class="field-radio__input" type="radio" value="weight" id="weight" name="property">
+              <label class="field-radio__text" for="weight">Набор массы</label>
+            </div>
+
+            <div class="field-radio">
+              <input class="field-radio__input" type="radio" value="advice" id="advice" name="property">
+              <label class="field-radio__text" for="advice">Незнаю (нужен ваш совет)</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="page-form__contacts">
+          <legend class="page-form__block-title">Контактные данные (владелец кота)</legend>
+
+          <label class="field-text">
+            <span class="field-text__label">E-mail:*</span>
+            <span class="field-text__wrapper">
+              <input class="field-text__input field-text__input--email" type="text" required placeholder="Барсик" name="mail">
+              <span class="field-text__icon">Иконка мыла</span>
+            </span>
+          </label>
+
+          <label class="field-text">
+            <span class="field-text__label">Телефон:*</span>
+            <span class="field-text__wrapper">
+              <input class="field-text__input" type="number" required placeholder="8 (960) 900-60-90" name="phone">
+              <span class="field-text__icon">Иконка телефона</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <fieldset class="page-form__notification">
+          <legend class="page-form__block-title">Контактные данные (владелец кота)</legend>
+
+          <label class="field-notification">
+            <textarea class="field-notification__input" placeholder="Расскажите обо всех повадках кота" name="notification"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="page-form__additionally">
+          <legend class="page-form__block-title">Дополнительно</legend>
+
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" id="color-white" checked name="additionally">
+            <label class="field-checkbox__text" for="color-white">Сахарозаменитель</label>
+          </div>
+
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" id="water" name="color-white">
+            <label class="field-checkbox__text" for="water">Питевая вода</label>
+          </div>
+
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" id="milk" name="additionally">
+            <label class="field-checkbox__text" for="milk">Молоко</label>
+          </div>
+
+          <div class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" id="vitamin" name="additionally">
+            <label class="field-checkbox__text" for="vitamin">Витамины</label>
+          </div>
+        </fieldset>
+
+        <div class="page-form__footer">
+          <button type="submit" value="Отправить заказ" class="page-form__btn button"></button>
+          <small class="page-form__footnote">* — Обязательные поля</small>
+        </div>
+      </form>
     </main>
 
     <footer class="footer">
@@ -32,13 +138,13 @@
 
       <section class="map">
         <h2 class="visually-hidden">Расположение компании на карте</h2>
-        <div class="map__content">
+        <div class="map__frame">
           <img src="https://via.placeholder.com/150x150" alt="Изображение карты" width="150" height="150">
         </div>
       </section>
 
-      <a href="" class="logo">
-        <p class="logo__text logo__text--big"><b>Cat</b> Energy</p>
+      <a class="logo-text footer__logo-text">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип компании текстовый" width="150" height="150">
       </a>
 
       <ul class="social">
@@ -72,8 +178,8 @@
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-academy">
-        <p class="logo-academy__text">HTML Academy</p>
-        <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy" width="27" height="34">
+        HTML Academy
+        <img src="https://via.placeholder.com/150x150" class="logo-academy__image" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </footer>
   </body>
