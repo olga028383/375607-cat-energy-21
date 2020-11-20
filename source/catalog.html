@@ -5,13 +5,16 @@
     <title>Каталог</title>
   </head>
   <body class="page__body">
-    <header class="header">
-      <a href="" class="logo">
+    <header class="page-header">
+      <a class="logo page-header__logo">
         <img src="https://via.placeholder.com/150x150" alt="Логотип компании" width="150" height="150">
         <p class="logo__text"><b>Cat</b> Energy</p>
       </a>
+      <a class="logo-text page-header__logo-text">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип компании текстовый" width="150" height="150">
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Кнопка переключения меню"></button>
       <nav class="nav">
-        <button type="button" class="nav__toggle">Кнопка переключения меню</button>
         <ul class="nav__list">
           <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
           <li class="nav__item nav__item--active"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
@@ -21,7 +24,245 @@
     </header>
 
     <main>
+      <h1 class="home-title">Каталог продукции</h1>
+      <section class="products">
+        <h2 class="visually-hidden">Товары каталога</h2>
 
+        <ul class="products__list">
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy pro 500 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">500 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Курица</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">700 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy pro 1000 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">1000 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Курица</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">1000 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy pro 500 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">500 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Рыба</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">700 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy pro 1000 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">1000 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Рыба</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">1000 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy slim 500 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">500 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Гречка</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">400 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy slim 1000 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">1000 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Гречка</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">700 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="offer">
+              <div class="offer__image">
+                <img src="https://via.placeholder.com/150x150" alt="Изображение товара" width="150" height="150">
+              </div>
+              <div class="offer__info">
+                <h3 class="offer__title">Cat energy slim 500 г</h3>
+                <dl class="offer__features">
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Масса</dt>
+                    <dd class="offer__feature-value">500 г</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Вкус</dt>
+                    <dd class="offer__feature-value">Рис</dd>
+                  </div>
+                  <div class="offer__feature">
+                    <dt class="offer__feature-name">Цена</dt>
+                    <dd class="offer__feature-value">500 р.</dd>
+                  </div>
+                </dl>
+              </div>
+              <a href="form.html" class="button offer__button">Заказать</a>
+            </article>
+          </li>
+
+          <li class="products__more">
+            <p class="products__more-title">Показать еще 100500 товаров</p>
+            <p class="products__more-subtitle">На самом деле вкуса гороздо больше!</p>
+            <button type="button" class="button products__more-button">Показать все</button>
+          </li>
+        </ul>
+      </section>
+      <section class="products-additionally">
+        <h2 class="title">Дополнительные товары</h2>
+        <ul class="products-additionally__list">
+          <li class="products-additionally__item">
+            <h3 class="products-additionally__title">Сахарозаменитель</h3>
+            <dl class="products-additionally__feature">
+              <dt class="products-additionally__feature-name">1 упаковка (100 г)</dt>
+              <dd class="products-additionally__feature-value">200 р</dd>
+            </dl>
+            <a href="form.html" class="button products-additionally__button">Заказать</a>
+          </li>
+
+          <li class="products-additionally__item">
+            <h3 class="products-additionally__title">Питевая вода</h3>
+            <dl class="products-additionally__feature">
+              <dt class="products-additionally__feature-name">5 литров</dt>
+              <dd class="products-additionally__feature-value">50 р</dd>
+            </dl>
+            <a href="form.html" class="button products-additionally__button">Заказать</a>
+          </li>
+
+          <li class="products-additionally__item">
+            <h3 class="products-additionally__title">Молоко</h3>
+            <dl class="products-additionally__feature">
+              <dt class="products-additionally__feature-name">1 литр</dt>
+              <dd class="products-additionally__feature-value">100 р</dd>
+            </dl>
+            <a href="form.html" class="button products-additionally__button">Заказать</a>
+          </li>
+
+          <li class="products-additionally__item">
+            <h3 class="products-additionally__title">Витамины</h3>
+            <dl class="products-additionally__feature">
+              <dt class="products-additionally__feature-name">1 упаковка (30 г)</dt>
+              <dd class="products-additionally__feature-value">300 р</dd>
+            </dl>
+            <a href="form.html" class="button products-additionally__button">Заказать</a>
+          </li>
+        </ul>
+
+        <div class="gift">
+          <span class="gift__icon"><img src="https://via.placeholder.com/150x150" alt="Изображение подарка" width="150" height="150"></span>
+          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -32,13 +273,13 @@
 
       <section class="map">
         <h2 class="visually-hidden">Расположение компании на карте</h2>
-        <div class="map__content">
+        <div class="map__frame">
           <img src="https://via.placeholder.com/150x150" alt="Изображение карты" width="150" height="150">
         </div>
       </section>
 
-      <a href="" class="logo">
-        <p class="logo__text logo__text--big"><b>Cat</b> Energy</p>
+      <a class="logo-text footer__logo-text">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип компании текстовый" width="150" height="150">
       </a>
 
       <ul class="social">
@@ -72,8 +313,8 @@
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-academy">
-        <p class="logo-academy__text">HTML Academy</p>
-        <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy" width="27" height="34">
+        HTML Academy
+        <img src="https://via.placeholder.com/150x150" class="logo-academy__image" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </footer>
   </body>
