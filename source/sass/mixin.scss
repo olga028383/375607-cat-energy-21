@@ -1,0 +1,53 @@
+$base-color: #b9ae98;
+$check: #949494;
+
+@mixin font($font) {
+  font-family: $font, "Arial", sans-serif;
+}
+
+@mixin btn($font-size: 12px,
+$font-family: "Arial",
+$background: transparent,
+$color: #fff,
+$hover: #fff,
+$scale:1) {
+  font-family: $font-family, "Arial", sans-serif;
+  font-size: $font_size;
+  color: $color;
+  background: $background;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+//медиа
+@mixin adaptive($media) {
+
+  @if $media == pc {
+    @media screen and (min-width: 1200px) {  @content }
+  } @else if $media == tablet-big {
+    @media screen and (min-width: 992px) {
+      @content
+    }
+  } @else if $media == tablet {
+    @media screen and (min-width: 768px) {
+      @content
+    }
+  } @else if $media == smart {
+    @media screen and (min-width: 577px) {
+      @content
+    }
+  } @else if $media == retina {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      @content
+    }
+  }
+}
+
+@mixin interval($start, $end) {
+  @media screen and (min-width: $start) and (max-width: $end) {
+    @content
+  }
+}
