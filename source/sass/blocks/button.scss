@@ -1,0 +1,33 @@
+.button {
+  @include btn("Oswald", $green, $white);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    background-color: $button-hover-background;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media screen and ($mobile-end) {
+  .button {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 20px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .button {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

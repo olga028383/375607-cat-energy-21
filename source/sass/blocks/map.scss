@@ -1,0 +1,21 @@
+.map__frame {
+  text-align: center;
+  background-color: $map-background;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and ($mobile-end) {
+  .map__frame {
+    height: 362px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .map__frame {
+    height: 400px;
+  }
+}

@@ -1,0 +1,14 @@
+.page {
+  font-family: $font-default;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.page__body {
+  margin: 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
