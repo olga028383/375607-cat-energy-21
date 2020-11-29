@@ -1,18 +1,52 @@
-$base-color: #b9ae98;
-$check: #949494;
+$black: #000000;
+$white: #ffffff;
+$green: #68b738;
+$gray: #f2f2f2;
+$color-black: #444444;
+$svg-color: #666666;
+
+$promo-background: rgba(104, 183, 56, 0.85);
+$border-menu-color: #e6e6e6;
+$category-border-color: #d9d9d9;
+$example-background: #eaeaea;
+$call-color: #111111;
+$footer-background: #d9d9d9;
+$slider-border-color: rgba(0, 0, 0, 0.24);
+
+
+//hover
+$button-hover-background: #5eaa2f;
+$slider-hover-border-color: rgba(0, 0, 0, 0.4);
+
+//breakpoints
+$mobile-end: "max-width: 767px";
+
+$tablet-start: "min-width: 768px";
+$tablet-end: "max-width: 1339px";
+
+$pc-start: "min-width: 1440px";
+
+$font-default: "Arial", "Helvetica Neue", sans-serif;
+
+@mixin text-default-mobile {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin text-default-desctop {
+  font-size: 16px;
+  line-height: 24px;
+}
 
 @mixin font($font) {
   font-family: $font, "Arial", sans-serif;
 }
 
-@mixin btn($font-size: 12px,
-$font-family: "Arial",
-$background: transparent,
-$color: #fff,
-$hover: #fff,
-$scale:1) {
+@mixin btn(
+  $font-family: "Arial",
+  $background: transparent,
+  $color: #ffffff) {
   font-family: $font-family, "Arial", sans-serif;
-  font-size: $font_size;
   color: $color;
   background: $background;
   justify-content: center;
@@ -20,34 +54,4 @@ $scale:1) {
   align-items: center;
   box-sizing: border-box;
   transition: all 0.2s linear;
-}
-
-//медиа
-@mixin adaptive($media) {
-
-  @if $media == pc {
-    @media screen and (min-width: 1200px) {  @content }
-  } @else if $media == tablet-big {
-    @media screen and (min-width: 992px) {
-      @content
-    }
-  } @else if $media == tablet {
-    @media screen and (min-width: 768px) {
-      @content
-    }
-  } @else if $media == smart {
-    @media screen and (min-width: 577px) {
-      @content
-    }
-  } @else if $media == retina {
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      @content
-    }
-  }
-}
-
-@mixin interval($start, $end) {
-  @media screen and (min-width: $start) and (max-width: $end) {
-    @content
-  }
 }

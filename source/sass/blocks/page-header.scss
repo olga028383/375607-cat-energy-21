@@ -1,0 +1,12 @@
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and ($mobile-end) {
+  .page-header__container {
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+}

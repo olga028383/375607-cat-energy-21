@@ -1,0 +1,58 @@
+.how-work__title {
+  @include font("Oswald");
+  color: $black;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.how-work__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.how-work__icon {
+  flex-shrink: 0;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-work__text {
+  olor: $color-black;
+  margin: 0;
+}
+
+@media screen and ($mobile-end) {
+  .how-work__title {
+    margin-bottom: 38px;
+  }
+
+  .how-work__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .how-work__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .how-work__text {
+    @include text-default-mobile;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .how-work__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-work__text {
+    @include text-default-desctop;
+  }
+}

@@ -1,0 +1,16 @@
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  svg {
+    width: 101px;
+    height: 18px;
+  }
+}

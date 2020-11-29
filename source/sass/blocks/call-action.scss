@@ -1,0 +1,47 @@
+.call-action {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.call-action__title {
+  @include font("Oswald");
+  color: $call-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+}
+
+.call-action__text {
+  color: $color-black;
+  margin: 0;
+}
+
+@media screen and ($mobile-end) {
+  .call-action {
+    padding: 28px 20px 20px;
+  }
+
+  .call-action__title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .call-action__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .call-action__title {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .call-action__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link--facebook {
+  svg {
+    stroke: $svg-color;
+  }
+
+  &:hover {
+    svg {
+      stroke: $green;
+    }
+  }
+}
+
+.social__link--instagram,
+.social__link--vk {
+  svg {
+    fill: $svg-color;
+  }
+
+  &:hover {
+    svg {
+      fill: $green;
+    }
+  }
+}

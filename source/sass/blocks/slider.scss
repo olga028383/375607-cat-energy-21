@@ -1,0 +1,37 @@
+.slider__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  img {
+    text-align: center;
+  }
+}
+
+.slider__controls-button {
+  @include font("Oswald");
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
+}
+
+@media screen and ($mobile-end) {
+  .slider__controls-button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .slider__controls-button {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $slider-border-color;
+
+    &:hover {
+      border-bottom: 1px solid $slider-hover-border-color;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.example {
+  background-color: $example-background;
+}
+
+.example__title {
+  @include font("Oswald");
+  color: $black;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.example__text {
+  color: $color-black;
+  margin-top: 0;
+}
+
+.example__result {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.example__result-value {
+  @include font("Oswald");
+  color: $black;
+  font-weight: 400;
+}
+
+.example__result-description {
+  color: $color-black;
+}
+
+.example__sum {
+  @include font("Oswald");
+  color: $black;
+  text-transform: uppercase;
+
+  strong {
+    font-weight: 400;
+  }
+}
+
+@media screen and ($mobile-end) {
+  .example__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+  .example__text {
+    @include text-default-mobile;
+    margin-bottom: 25px;
+  }
+
+  .example__result-value {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .example__result-description {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .example__sum {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    @include text-default-desctop;
+  }
+
+  .example__result-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__result-description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__sum {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
