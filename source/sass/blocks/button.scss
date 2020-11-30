@@ -2,6 +2,7 @@
   @include btn("Oswald", $green, $white);
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
 
   &:hover,
   &:active {

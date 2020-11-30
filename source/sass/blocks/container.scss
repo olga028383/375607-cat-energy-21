@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and ($mobile-end) and ($tablet-start) {
+@media screen and ($tablet-start) and ($tablet-end) {
   .container {
     padding-left: 30px;
     padding-right: 30px;

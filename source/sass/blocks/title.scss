@@ -1,0 +1,21 @@
+.title {
+  @include font("Oswald");
+  color: $black;
+  text-transform: uppercase;
+}
+
+@media screen and ($mobile-end) {
+  .title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+}

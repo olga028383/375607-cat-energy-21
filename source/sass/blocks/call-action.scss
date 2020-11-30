@@ -2,6 +2,10 @@
   background-color: $white;
   display: flex;
   justify-content: space-between;
+
+  &--inner {
+    background-color: $gray;
+  }
 }
 
 .call-action__title {
