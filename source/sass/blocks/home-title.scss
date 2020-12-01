@@ -1,0 +1,32 @@
+.home-title {
+  @include font("Oswald");
+  color: $black;
+  font-weight: 400;
+}
+
+@media screen and ($mobile-end) {
+  .home-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .home-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .home-title {
+    margin-bottom: 54px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .home-title {
+    margin-bottom: 56px;
+  }
+}

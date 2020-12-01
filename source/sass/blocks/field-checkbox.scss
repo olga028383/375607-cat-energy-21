@@ -1,0 +1,71 @@
+.field-checkbox__text {
+  @include font("Oswald");
+  color: $black;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 7px;
+  cursor: pointer;
+}
+
+.field-checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid $input-radio-border-color;
+  box-sizing: border-box;
+}
+
+.field-checkbox__input:checked + .field-checkbox__text::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  border-left: 1px solid $green;
+  border-bottom: 1px solid $green;
+  transform: rotate(-45deg);
+}
+
+.field-checkbox__input:disabled + .field-radio__text {
+  opacity: 0.3;
+}
+
+@media screen and ($mobile-end) {
+  .field-checkbox__text {
+    font-size: 16px;
+    line-height: 18px;
+    min-height: 30px;
+    padding-left: 45px;
+  }
+
+  .field-checkbox__text::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .field-checkbox__input + .field-checkbox__text::after {
+    left: 7px;
+    top: 6px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .field-checkbox__text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 58px;
+    min-height: 40px;
+  }
+
+  .field-checkbox__text::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .field-checkbox__input + .field-checkbox__text::after {
+    left: 12px;
+    top: 11px;
+  }
+}

@@ -1,0 +1,68 @@
+.page-form__text {
+  @include font("Oswald");
+  color: $black;
+  text-transform: uppercase;
+}
+
+.page-form__home-info,
+.page-form__contacts,
+.page-form__notification,
+.page-form__additionally {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-form__field-radio {
+  margin-bottom: 13px;
+}
+
+.page-form__footnote {
+  color: $black;
+}
+
+@media screen and ($mobile-end) {
+  .page-form__text {
+    @include text-default-mobile;
+    margin-bottom: 39px;
+  }
+
+  .page-form__field-info,
+  .page-form__field-checkbox {
+    margin-bottom: 13px;
+  }
+
+  .page-form__footer {
+    text-align: center;
+  }
+
+  .page-form__button {
+    margin-bottom: 21px;
+  }
+
+  .page-form__footnote {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .page-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  .page-form__field-info {
+    margin-bottom: 20px;
+  }
+
+  .page-form__field-checkbox {
+    margin-bottom: 32px;
+  }
+
+  .page-form__footnote {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

@@ -5,7 +5,6 @@ $gray: #f2f2f2;
 $light-black: #444444;
 $svg-color: #666666;
 
-
 $promo-background: rgba(104, 183, 56, 0.85);
 $border-menu-color: #e6e6e6;
 $category-border-color: #d9d9d9;
@@ -14,10 +13,15 @@ $call-color: #111111;
 $footer-background: #d9d9d9;
 $slider-border-color: rgba(0, 0, 0, 0.24);
 $map-background: #edeae3;
+$field-border-color: #e7e7e7;
+$input-radio-color: #222222;
+$input-radio-border-color: #cdcdcd;
+$error: #ff8282;
 
 //hover
 $button-hover-background: #5eaa2f;
 $slider-hover-border-color: rgba(0, 0, 0, 0.4);
+$input-radio-hover-color: #cdcdcd;
 
 //breakpoints
 $mobile-end: "max-width: 767px";
