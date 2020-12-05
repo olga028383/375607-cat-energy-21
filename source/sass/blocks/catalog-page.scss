@@ -1,0 +1,11 @@
+@media screen and ($tablet-start) and ($tablet-end) {
+  .catalog-page__products-additionally {
+    margin-bottom: 76px;
+  }
+}
+
+@media screen and ($pc-start) {
+  .catalog-page__products-additionally {
+    margin-bottom: 86px;
+  }
+}

@@ -1,0 +1,45 @@
+.gift {
+  background-color: $green;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gift__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.gift__text {
+  color: $white;
+}
+
+@media screen and ($mobile-end) {
+  .gift {
+    padding: 40px;
+    background-image: url("../img/gift-photo-mobile.jpg");
+  }
+
+  .gift__icon {
+    margin-bottom: 48px;
+  }
+
+  .gift__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .gift {
+    padding: 40px 78px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+  }
+}
+
+@media screen and ($pc-start) {
+  .gift {
+    padding: 40px;
+    background-image: url("../img/gift-photo-desctop.jpg");
+  }
+}

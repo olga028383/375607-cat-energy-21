@@ -1,0 +1,60 @@
+.products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.products__more {
+  text-align: center;
+}
+
+.products__more-button {
+  .button {
+    @include btn("Oswald", $gray, $light-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: $products-more-button-background;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media screen and ($mobile-end) {
+  .products__item {
+    border-bottom: 1px solid $products-border-color;
+    border-top: 1px solid $products-border-color;
+    padding-bottom: 25px;
+    padding-top: 19px;
+    margin-top: -1px;
+  }
+
+  .products__more {
+    border-bottom: 1px solid $products-border-color;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .products__more {
+    padding: 38px;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .products__item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and ($pc-start) {
+  .products__item {
+    margin-bottom: 63px;
+  }
+}

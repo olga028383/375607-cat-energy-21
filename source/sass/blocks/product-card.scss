@@ -1,0 +1,74 @@
+.product-card__title {
+  @include font("Oswald");
+  color: $product-title-color;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.products__more-title {
+  @include font("Oswald");
+  text-transform: uppercase;
+  color: $products-more-title-color;
+}
+
+.products__more-subtitle {
+  color: $light-black;
+  margin-bottom: 21px;
+}
+
+@media screen and ($mobile-end) {
+  .product-card__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
+  }
+
+  .product-card__button {
+    margin-top: 25px;
+  }
+
+  .products__more-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .products__more-subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .product-card {
+    background-color: $gray;
+    padding: 40px 38px;
+  }
+
+  .products__more-title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  .products__more-subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 21px;
+  }
+}
+
+@media screen and ($pc-start) {
+  .product-card__title {
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+}
