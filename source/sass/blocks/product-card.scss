@@ -9,6 +9,7 @@
   @include font("Oswald");
   text-transform: uppercase;
   color: $products-more-title-color;
+  font-weigth: 400;
 }
 
 .products__more-subtitle {
