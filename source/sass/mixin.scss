@@ -4,6 +4,7 @@ $green: #68b738;
 $gray: #f2f2f2;
 $light-black: #444444;
 $svg-color: #666666;
+$error: #ff8282;
 
 $promo-background: rgba(104, 183, 56, 0.85);
 $border-menu-color: #e6e6e6;
@@ -16,12 +17,16 @@ $map-background: #edeae3;
 $field-border-color: #e7e7e7;
 $input-radio-color: #222222;
 $input-radio-border-color: #cdcdcd;
-$error: #ff8282;
+$product-title-color: #222222;
+$products-border-color: #ebebeb;
+$products-more-title-color: #111111;
+$properties-border-color: #cdcdcd;
 
 //hover
 $button-hover-background: #5eaa2f;
 $slider-hover-border-color: rgba(0, 0, 0, 0.4);
 $input-radio-hover-color: #cdcdcd;
+$products-more-button-background: #ebebeb;
 
 //breakpoints
 $mobile-end: "max-width: 767px";

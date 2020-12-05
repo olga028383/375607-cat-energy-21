@@ -1,0 +1,40 @@
+.products-additionally__list {
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+.products-additionally__title {
+  @include font("Oswald");
+  color: $product-title-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+@media screen and ($mobile-end) {
+  .products-additionally__list {
+    margin-bottom: 39px;
+  }
+
+  .products-additionally__item {
+    padding-bottom: 19px;
+    padding-top: 12px;
+    border-bottom: 1px solid $products-border-color;
+    border-top: 1px solid $products-border-color;
+    margin-top: -1px;
+  }
+
+  .products-additionally__title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .products-additionally__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

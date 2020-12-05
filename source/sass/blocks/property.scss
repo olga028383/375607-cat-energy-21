@@ -1,0 +1,26 @@
+.property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property__name,
+.property__value {
+  color: $light-black;
+}
+
+@media screen and ($mobile-end) {
+  .property__name,
+  .property__value {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .property__name,
+  .property__value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
