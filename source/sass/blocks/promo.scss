@@ -17,9 +17,14 @@
     padding-top: 27px;
     padding-bottom: 148px;
     background-image: url("../img/promo-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
     min-height: 302px;
     box-sizing: border-box;
+    margin-left: -20px;
+    margin-right: -20px;
 
     &::before {
       content: "";
@@ -59,10 +64,16 @@
     margin-right: auto;
     margin-top: -138px;
   }
+
+  .promo__button {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    max-width: 100%;
+  }
 }
 
 @media screen and ($tablet-start) {
-  .promo {
+  .promo__container {
     display: flex;
     flex-direction: column;
   }
@@ -90,6 +101,7 @@
 
   .promo__button {
     order: 2;
+    max-width: 244px;
   }
 }
 
@@ -100,6 +112,44 @@
 }
 
 @media screen and ($pc-start) {
+  .promo {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      background-color: $promo-background;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -120px;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      background-image: url("../img/promo-background-desctop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .promo__container {
+    display: grid;
+    grid-template-columns: 520px 500px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .promo__button {
+    grid-row: 2/3;
+  }
+
   .promo__text {
     margin-bottom: 52px;
   }

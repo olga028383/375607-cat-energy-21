@@ -1,4 +1,7 @@
 .logo {
+  display: flex;
+  align-items: center;
+
   &:hover {
     opacity: 0.8;
   }
@@ -9,8 +12,22 @@
 }
 
 .logo__text {
+  display: block;
+
   svg {
     width: 101px;
     height: 18px;
+  }
+}
+
+@media screen and ($mobile-end) {
+  .logo__image {
+    display: block;
+    width: 44px;
+  }
+
+  .logo__text {
+    width: calc(100% - 44px);
+    text-align: center;
   }
 }

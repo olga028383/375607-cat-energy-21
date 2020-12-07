@@ -1,3 +1,11 @@
 .footer {
   background-color: $footer-background;
 }
+
+@media screen and ($tablet-start) {
+  .footer__bottom-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

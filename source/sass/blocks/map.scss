@@ -19,3 +19,23 @@
     height: 400px;
   }
 }
+
+@media screen and ($pc-start) {
+  .map {
+    position: relative;
+  }
+
+  .map__container {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin-left: -640px;
+    display: flex;
+    align-items: center;
+  }
+
+  .map__call-action {
+    padding: 50px 76px;
+  }
+}

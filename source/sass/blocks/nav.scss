@@ -30,6 +30,9 @@
 @media screen and ($mobile-end) {
   .nav {
     border-top: 1px solid $border-menu-color;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
   }
 
   .nav__item {
@@ -56,6 +59,13 @@
 @media screen and ($tablet-end) {
   .nav__link {
     color: $black;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .nav__list {
+    display: flex;
+    align-items: center;
   }
 }
 

@@ -1,3 +1,9 @@
+@media screen and ($mobile-end) {
+  .nav-toggle {
+    width: 44px;
+  }
+}
+
 @media screen and ($tablet-start) {
   .nav-toggle {
     display: none;

@@ -2,12 +2,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .slider__item {
   img {
     text-align: center;
   }
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
 }
 
 .slider__controls-button {
