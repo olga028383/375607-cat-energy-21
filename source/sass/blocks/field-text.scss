@@ -1,5 +1,6 @@
 .field-text {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .field-text__label {
@@ -7,11 +8,13 @@
   color: $light-black;
   text-transform: uppercase;
   margin-right: 14px;
+  flex-shrink: 0;
 }
 
 .field-text__wrapper {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .field-text__input {
