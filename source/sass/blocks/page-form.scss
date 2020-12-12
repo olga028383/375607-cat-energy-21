@@ -1,3 +1,7 @@
+.page-form__home-info-right {
+  border: 1px solid $field-border-color;
+}
+
 .page-form__text {
   @include font("Oswald");
   color: $black;
@@ -22,6 +26,14 @@
 }
 
 @media screen and ($mobile-end) {
+  .page-form__home-info-right {
+    padding: 20px 20px 0;
+    margin-left: -21px;
+    margin-right: -21px;
+    width: calc(100% + 42px);
+    margin-bottom: 26px;
+  }
+
   .page-form__text {
     @include text-default-mobile;
     margin-bottom: 39px;
@@ -30,6 +42,10 @@
   .page-form__field-info,
   .page-form__field-checkbox {
     margin-bottom: 13px;
+  }
+
+  .page-form__contacts-field {
+    margin-bottom: 14px;
   }
 
   .page-form__footer {
@@ -47,6 +63,15 @@
 }
 
 @media screen and ($tablet-start) {
+  .page-form__additionally {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-form__additionally-title {
+    width: 100%;
+  }
+
   .page-form__text {
     font-size: 20px;
     line-height: 30px;
@@ -57,6 +82,10 @@
     margin-bottom: 20px;
   }
 
+  .page-form__contacts-field {
+    margin-bottom: 20px;
+  }
+
   .page-form__field-checkbox {
     margin-bottom: 32px;
   }
@@ -64,5 +93,50 @@
   .page-form__footnote {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .page-form__home-info-right {
+    padding: 30px 27px 15px;
+  }
+
+  .page-form__additionally-field {
+    width: 50%;
+  }
+}
+
+@media screen and ($pc-start) {
+  .page-form__home-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    align-items: start;
+  }
+
+  .page-form__home-info-right {
+    padding: 25px 28px 10px;
+  }
+
+  .page-form__contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-form__contacts-title {
+    width: 100%;
+  }
+
+  .page-form__contacts-field {
+    flex-grow: 1;
+    margin-right: 78px;
+  }
+
+  .page-form__contacts-field:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .page-form__additionally-field {
+    width: 25%;
   }
 }

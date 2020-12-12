@@ -3,6 +3,8 @@
   font-family: $font-default;
   font-weight: 400;
   min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .page__body {
@@ -10,6 +12,8 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  width: 100%;
+  overflow-x: hidden;
 
   img {
     max-width: 100%;
