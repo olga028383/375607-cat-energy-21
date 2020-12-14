@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="container page-header__container">
+    <header class="page-header container">
+      <div class="page-header__container">
         <a class="logo page-header__logo">
-          <img src="./img/logo-mobile.jpg" alt="Логотип компании" width="34" height="38">
-          <span class="page-header__logo-text">
+          <span class="logo__image">
+            <img src="./img/logo-mobile.jpg" alt="Логотип компании" width="34" height="38">
+          </span>
+          <span class="logo__text">
           <svg role="img" area-label="Название компании" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111"/>
@@ -36,9 +38,9 @@
       </div>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item "><a href="index.html" class="nav__link">Главная</a></li>
-          <li class="nav__item nav__item--active"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
-          <li class="nav__item"><a href="form.html" class="nav__link">Подбор программы</a></li>
+          <li class="nav__item "><a href="index.html" class="nav__link nav__link--inner-page">Главная</a></li>
+          <li class="nav__item nav__item--active"><a href="catalog.html" class="nav__link nav__link--inner-page">Каталог продукции</a></li>
+          <li class="nav__item"><a href="form.html" class="nav__link nav__link--inner-page">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -243,7 +245,7 @@
         <ul class="products-additionally__list">
           <li class="products-additionally__item">
             <h3 class="products-additionally__title">Сахарозаменитель</h3>
-            <dl class="property">
+            <dl class="property products-additionally__property">
               <dt class="property__name">1 упаковка (100 г)</dt>
               <dd class="property__value">200 р</dd>
             </dl>
@@ -252,7 +254,7 @@
 
           <li class="products-additionally__item">
             <h3 class="products-additionally__title">Питевая вода</h3>
-            <dl class="property">
+            <dl class="property products-additionally__property">
               <dt class="property__name">5 литров</dt>
               <dd class="property__value">50 р</dd>
             </dl>
@@ -261,7 +263,7 @@
 
           <li class="products-additionally__item">
             <h3 class="products-additionally__title">Молоко</h3>
-            <dl class="property">
+            <dl class="property products-additionally__property">
               <dt class="property__name">1 литр</dt>
               <dd class="property__value">100 р</dd>
             </dl>
@@ -270,7 +272,7 @@
 
           <li class="products-additionally__item">
             <h3 class="products-additionally__title">Витамины</h3>
-            <dl class="property">
+            <dl class="property products-additionally__property">
               <dt class="property__name">1 упаковка (30 г)</dt>
               <dd class="property__value">300 р</dd>
             </dl>
@@ -278,7 +280,7 @@
           </li>
         </ul>
 
-        <div class="gift">
+        <div class="gift catalog-page__gift">
           <span class="gift__icon">
             <svg role="img" area-label="Изображение подарка" width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M64.0156 34.7129H14.031C12.2766 34.7129 10.8494 33.2954 10.8494 31.5526V22.0845C10.8494 20.3417 12.2766 18.9236 14.031 18.9236H64.0149C65.7687 18.9236 67.1953 20.3417 67.1953 22.0845V31.5533C67.1959 33.2954 65.7693 34.7129 64.0156 34.7129ZM14.031 21.3457C13.6276 21.3457 13.2869 21.6842 13.2869 22.0845V31.5533C13.2869 31.9602 13.6208 32.2914 14.031 32.2914H64.0149C64.4244 32.2914 64.7578 31.9602 64.7578 31.5533V22.0845C64.7578 21.6836 64.4171 21.3457 64.0149 21.3457H14.031Z" fill="white"/>
@@ -296,7 +298,7 @@
 
     <footer class="footer">
       <section class="map">
-        <div class="conatiner map__container">
+        <div class="container map__container">
           <section class="call-action call-action--inner map__call-action">
             <h2 class="call-action__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
             <p class="call-action__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
@@ -308,7 +310,7 @@
         </div>
       </section>
 
-      <div class="container">
+      <div class="container footer__bottom-line">
         <a class="logo footer__logo">
           <span class="logo__text">
           <svg role="img" area-label="Название компании" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
