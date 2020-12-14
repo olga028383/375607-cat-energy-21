@@ -49,3 +49,10 @@
     line-height: 20px;
   }
 }
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .call-action {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

@@ -7,5 +7,14 @@
 @media screen and ($pc-start) {
   .catalog-page__products-additionally {
     margin-bottom: 86px;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-template-rows: min-content 1fr;
+    grid-column-gap: 80px;
+    align-items: start;
+
+    .title {
+      grid-column: 1/-1;
+    }
   }
 }

@@ -34,6 +34,9 @@
   .gift {
     padding: 40px 78px;
     background-image: url("../img/gift-photo-tablet.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
