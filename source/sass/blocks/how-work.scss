@@ -26,6 +26,8 @@
 
 @media screen and ($mobile-end) {
   .how-work__title {
+    font-size: 36px;
+    line-height: 40px;
     margin-bottom: 38px;
   }
 
@@ -50,6 +52,25 @@
   .how-work__list {
     display: flex;
     flex-wrap: wrap;
+    counter-reset: item;
+  }
+
+  .how-work__item {
+    position: relative;
+    min-height: 228px;
+
+    &::before {
+      @include font("Oswald");
+      counter-increment: item;
+      content: counter(item);
+      font-size: 280px;
+      line-height: 280px;
+      position: absolute;
+      left: 116px;
+      top: -40px;
+      color: $gray;
+      z-index: -1;
+    }
   }
 
   .how-work__icon {
@@ -60,16 +81,44 @@
   .how-work__text {
     @include text-default-desctop;
   }
+
+  .how-work__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and ($tablet-start) and ($tablet-end) {
+  .how-work__list {
+    margin-top: -80px;
+  }
+
   .how-work__item {
-    width: 40%;
+    width: 36%;
+    margin-top: 80px;
+    margin-right: 126px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .how-work__icon {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and ($pc-start) {
+  .how-work__list {
+    justify-content: space-between;
+  }
+
   .how-work__item {
-    width: 25%;
+    width: 245px;
+  }
+
+  .how-work__icon {
+    margin-bottom: 35px;
   }
 }

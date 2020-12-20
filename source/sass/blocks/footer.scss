@@ -1,5 +1,31 @@
 .footer {
-  background-color: $footer-background;
+  background-color: $gray;
+}
+
+@media screen and ($mobile-end) {
+  .footer__bottom-line {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .footer__logo {
+    padding-bottom: 30px;
+    border-bottom: 1px solid $footer-border-color;
+    margin-bottom: 20px;
+
+    svg {
+      width: 128px;
+      height: 24px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .footer__social {
+    padding-bottom: 16px;
+    border-bottom: 1px solid $footer-border-color;
+    margin-bottom: 22px;
+  }
 }
 
 @media screen and ($tablet-start) {
@@ -7,5 +33,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .footer__logo,
+  .footer__logo-academy {
+    width: 30%;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .footer__bottom-line {
+    padding-top: 44px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and ($pc-start) {
+  .footer__bottom-line {
+    padding-top: 57px;
+    padding-bottom: 55px;
   }
 }

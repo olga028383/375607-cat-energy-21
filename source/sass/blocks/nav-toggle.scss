@@ -1,6 +1,29 @@
 @media screen and ($mobile-end) {
   .nav-toggle {
     width: 44px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 25px;
+      right: 0;
+      height: 2px;
+      background: $black;
+      top: 0;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
   }
 }
 

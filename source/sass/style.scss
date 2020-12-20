@@ -1,10 +1,10 @@
 @import "mixin.scss";
 @import "fonts.scss";
+@import "blocks/container.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/page-home.scss";
-@import "blocks/visually-hidden.scss";
-@import "blocks/container.scss";
-@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/nav-toggle.scss";
@@ -15,12 +15,12 @@
 @import "blocks/example.scss";
 @import "blocks/slider.scss";
 @import "blocks/call-action.scss";
-@import "blocks/footer.scss";
-@import "blocks/map.scss";
 @import "blocks/social.scss";
+@import "blocks/map.scss";
 @import "blocks/logo-academy.scss";
 @import "blocks/home-title.scss";
 @import "blocks/title.scss";
+@import "blocks/footer.scss";
 
 //Форма
 @import "blocks/field-text.scss";

@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-.nav__item {
-  &--active {
-    .nav__link {
-      border-bottom: 1px solid $green;
-    }
-  }
-}
-
 .nav__link {
   @include font("Oswald");
   display: block;
@@ -36,7 +28,7 @@
   }
 
   .nav__item {
-    border-bottom: 1px solid $border-menu-color;
+    border-bottom: 2px solid $border-menu-color;
   }
 
   .nav__link {
@@ -49,7 +41,17 @@
   }
 }
 
-@media screen and ($mobile-end) and ($tablet-start) {
+@media screen and ($tablet-start) and ($tablet-end) {
+  .nav__item {
+    margin-left: 32px;
+
+    &--active {
+      .nav__link {
+        border-bottom-color: $green;
+      }
+    }
+  }
+
   .nav__link {
     font-size: 18px;
     line-height: 24px;
@@ -67,9 +69,24 @@
     display: flex;
     align-items: center;
   }
+
+  .nav__link {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and ($pc-start) {
+  .nav__item {
+    margin-left: 34px;
+
+    &--active {
+      .nav__link {
+        border-bottom-color: $white;
+      }
+    }
+  }
+
   .nav__link {
     color: $white;
     font-size: 20px;

@@ -36,3 +36,39 @@
     }
   }
 }
+
+@media screen and ($mobile-end) {
+  .social {
+    justify-content: center;
+  }
+
+  .social__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .social__item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .social__link {
+    width: 28px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .social__link--instagram {
+    width: 23px;
+    height: 23px;
+  }
+}
