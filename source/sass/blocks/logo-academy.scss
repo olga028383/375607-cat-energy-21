@@ -20,3 +20,25 @@
     opacity: 0.3;
   }
 }
+
+@media screen and ($mobile-end) {
+  .logo-academy {
+    justify-content: space-between;
+  }
+}
+
+@media screen and ($tablet-start) {
+  .logo-academy {
+    justify-content: flex-end;
+
+    svg {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and ($tablet-start) {
+  .logo__text {
+    display: none;
+  }
+}

@@ -2,22 +2,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
 }
 
 .slider__item {
   img {
     text-align: center;
+    height: 100%;
+    width: auto;
   }
-  grid-column: 1/2;
-  grid-row: 1/2;
+
+  picture {
+    font-size: 0;
+  }
 }
 
 .slider__controls {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .slider__controls-button {
@@ -28,9 +30,47 @@
 }
 
 @media screen and ($mobile-end) {
+  .slider__list {
+    margin: 0 -20px 34px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .slider__item {
+    display: none;
+    height: 232px;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+
+    &:first-child {
+      display: block;
+    }
+  }
+
   .slider__controls-button {
     font-size: 16px;
     line-height: 20px;
+    width: 72px;
+    text-align: center;
+  }
+
+  .slider__controls-line {
+    width: 84px;
+    border: 1px solid $slider-border-color;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: $white;
+    padding: 4px 6px;
+  }
+
+  .slider__controls-active {
+    width: 50%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $green;
   }
 }
 
@@ -39,9 +79,69 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $slider-border-color;
+    text-align: center;
 
     &:hover {
       border-bottom: 1px solid $slider-hover-border-color;
     }
+  }
+
+  .slider__list {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .slider__item {
+    width: 50%;
+    text-align: left;
+  }
+
+  .slider__item:first-child {
+    text-align: right;
+  }
+
+  .slider__controls {
+    padding-bottom: 20px;
+  }
+
+  .slider__controls-line {
+    width: 428px;
+    border-radius: 6px;
+    background-color: $slider-line-background;
+    height: 6px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+
+  .slider__controls-active {
+    width: 34px;
+    height: 34px;
+    background-color: $white;
+    border: 1px solid $slider-border-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $green;
+    }
+  }
+}
+
+@media screen and ($pc-start) {
+  .slider__controls {
+    padding-top: 20px;
   }
 }

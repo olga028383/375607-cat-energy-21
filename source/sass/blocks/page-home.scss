@@ -1,5 +1,31 @@
+@media screen and ($mobile-end) {
+  .page-home__category {
+    margin-bottom: 30px;
+  }
+
+  .page-home__how-work {
+    margin-bottom: 42px;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .page-home__category {
+    margin-bottom: 42px;
+  }
+
+  .page-home__how-work {
+    padding-bottom: 52px;
+    border-bottom: 1px solid $how-work-border-bottom-color;
+    margin-bottom: 42px;
+  }
+}
+
 @media screen and ($pc-start) {
   .page-home__promo {
     margin-bottom: 80px;
+  }
+
+  .page-home__how-work {
+    margin-bottom: 83px;
   }
 }

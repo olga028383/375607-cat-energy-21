@@ -31,3 +31,9 @@
     text-align: center;
   }
 }
+
+@media screen and ($tablet-start) {
+  .logo__image {
+    font-size: 0;
+  }
+}

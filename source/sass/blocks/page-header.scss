@@ -1,7 +1,6 @@
 .page-header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -9,10 +8,18 @@
   .page-header__container {
     padding-top: 12px;
     padding-bottom: 16px;
+    align-items: center;
   }
 
   .page-header__logo {
     flex-grow: 1;
+  }
+}
+
+@media screen and ($tablet-start) and ($tablet-end) {
+  .page-header {
+    padding-top: 13px;
+    margin-bottom: 63px;
   }
 }
 
@@ -26,8 +33,9 @@
 
 @media screen and ($pc-start) {
   .page-header {
-    height: 120px;
+    height: 108px;
     position: relative;
     z-index: 2;
+    margin-bottom: 33px;
   }
 }
